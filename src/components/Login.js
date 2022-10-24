@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 import { useDispatch } from 'react-redux';
 
 
-const Login = props => {
+const Login = ({ setShow }) => {
 
     const [hasError, SetHasError] = useState(false);
 
@@ -29,6 +29,7 @@ const Login = props => {
         if (finduser.length > 0) {
             navigate("/home");
             dispatch(login(finduser));
+            setShow(false)
         } else {
             SetHasError(true);
         }

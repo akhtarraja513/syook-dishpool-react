@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import ProtectedRoute from "./components/ProtectedRoute";
 import Login from "./components/Login";
 import Home from "./components/Home";
@@ -11,6 +11,8 @@ import "./App.css";
 
 function App() {
 
+  const [show, setShow] = useState(true);
+
   useEffect(() => {
     axios.get("https://raw.githubusercontent.com/syook/react-dishpoll/main/db.json")
       .then((res) => {
@@ -21,19 +23,27 @@ function App() {
 
   return (
     <div className="App">
-
-      <Routes>
+      {show ? (<>
+        <div className="note">
+        <strong>Note : </strong> After enter the username and password please scrolldown 
+        and click the stert polling box after that rank the items by 
+        1,2 and 3 after rating scroll up then submit poll.
+      </div>
+      <Login setShow={setShow}/>
+      </>) : (
+        <Routes>
         <Route path="/" element={<ProtectedRoute />}>
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/polling" element={<Polling />} />
-
         </Route>
 
-        <Route path="/login" element={<Login />} />
+        <Route exact path="/login" element={<Login />} />
         <Route path="/result" element={<Result />} />
 
       </Routes>
+      )}
+      
     </div>
   );
 }
