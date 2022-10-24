@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/syook-dishpool-react/static/css/main.ff69177b.css",
-    "main.js": "/syook-dishpool-react/static/js/main.791832ad.js",
+    "main.css": "/syook-dishpool-react/static/css/main.62c60650.css",
+    "main.js": "/syook-dishpool-react/static/js/main.31c1df46.js",
     "static/js/787.bb8c25a7.chunk.js": "/syook-dishpool-react/static/js/787.bb8c25a7.chunk.js",
     "index.html": "/syook-dishpool-react/index.html",
-    "main.ff69177b.css.map": "/syook-dishpool-react/static/css/main.ff69177b.css.map",
-    "main.791832ad.js.map": "/syook-dishpool-react/static/js/main.791832ad.js.map",
+    "main.62c60650.css.map": "/syook-dishpool-react/static/css/main.62c60650.css.map",
+    "main.31c1df46.js.map": "/syook-dishpool-react/static/js/main.31c1df46.js.map",
     "787.bb8c25a7.chunk.js.map": "/syook-dishpool-react/static/js/787.bb8c25a7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ff69177b.css",
-    "static/js/main.791832ad.js"
+    "static/css/main.62c60650.css",
+    "static/js/main.31c1df46.js"
   ]
 }
