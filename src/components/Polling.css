@@ -1,0 +1,65 @@
+.view-container {
+    width: 99%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+}
+
+.smt-btn {
+    margin-top: 40px;
+    width: 200px;
+    height: 60px;
+    display: block;
+    background-color: rgb(81, 106, 248);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.smt-btn:hover {
+    background-color:  rgb(123, 141, 242);
+    border: 2px solid white;
+}
+
+.dish {
+    width: 99%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.itemCard {
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 50px 2px;
+    width: 33%;
+}
+
+.img-all {
+    width: 85%;
+}
+
+h2 {
+    padding: 0;
+    margin: 0;
+}
+
+.buttonWrapper {
+    margin: auto;
+    width: 80%;
+    height: 40px;
+}
+
+.rank {
+    width: 30%;
+    height: 100%;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.rank:hover {
+    cursor: pointer;
+}

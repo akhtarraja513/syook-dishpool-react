@@ -1,0 +1,50 @@
+.tables {
+    max-width: 1000px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    width: 100%;
+    border: 2px solid rgb(211, 211, 211);
+    padding: 20px 30px;
+}
+
+thead {
+    display: flex;
+    width: 100%;
+    background: rgb(111, 111, 111);
+    color: white;
+    border-radius: 6px;
+}
+
+tr {
+    display: flex;
+    width: 99%;
+    height: 30px;
+    padding: 7px;
+}
+
+tr:hover {
+    background-color: rgb(184, 206, 225);
+    color: black;
+    border-radius: 5px;
+}
+
+td,
+th {
+    flex: 1 1 40%;
+    text-align: center;
+}
+
+hr {
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 255, 255);
+}
+
+.header__item {
+    text-transform: uppercase;
+}

@@ -1,0 +1,53 @@
+.tab-container {
+    height: 100%;
+}
+
+.tabs {
+    display: flex;
+    height: 70vh;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    border: none;
+}
+
+
+
+.nav-link {
+    background-color: #4a6b60;
+    color: white;
+    text-decoration: none;
+    padding: 0 60px;
+    margin: 0 30px;
+    width: 350px;
+    height: 300px;
+    border-radius: 10px;
+    font-size: 40px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.nav-link:hover {
+    background-color: #748c84;
+}
+
+.logout {
+    background-color: crimson;
+    color: white;
+    text-decoration: none;
+    width: 300px;
+    height: 100px;
+    border-radius: 10px;
+    padding: 4px;
+    font-size: 40px;
+    text-transform: uppercase;
+    border: none;
+}
+
+.logout:hover {
+    background-color: red;
+}

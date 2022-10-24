@@ -1,23 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import ProtectedRoute from "./components/ProtectedRoute";
+import Login from "./components/Login";
+import Home from "./components/Home";
+import Polling from './components/Polling';
+import Result from './components/Result'
+import axios from 'axios'
+import { Routes, Route } from "react-router-dom";
+
+import "./App.css";
 
 function App() {
+
+  useEffect(() => {
+    axios.get("https://raw.githubusercontent.com/syook/react-dishpoll/main/db.json")
+      .then((res) => {
+        console.log(res.data)
+        localStorage.setItem("pollData", JSON.stringify(res.data))
+      })
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <Routes>
+        <Route path="/" element={<ProtectedRoute />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/polling" element={<Polling />} />
+
+        </Route>
+
+        <Route path="/login" element={<Login />} />
+        <Route path="/result" element={<Result />} />
+
+      </Routes>
     </div>
   );
 }
