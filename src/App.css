@@ -20,3 +20,7 @@
   width: 50%;
   margin: auto;
 }
+
+.App > .note {
+  margin-bottom: 70px;
+}

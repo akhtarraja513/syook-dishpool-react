@@ -25,9 +25,8 @@ function App() {
     <div className="App">
       {show ? (<>
         <div className="note">
-        <strong>Note : </strong> After enter the username and password please scrolldown 
-        and click the stert polling box after that rank the items by 
-        1,2 and 3 after rating scroll up then submit poll.
+        <strong>Note : </strong> After enter the username and password please go through with start polling box after that rank the items by 
+        1,2 and 3 (one time you can rate maximum three items) then scroll up and click submit poll after click you can see the rating table.
       </div>
       <Login setShow={setShow}/>
       </>) : (

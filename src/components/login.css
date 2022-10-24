@@ -1,6 +1,4 @@
 .outer-container {
-    width: 99.7vw;
-    height: 99vh;;
     display: flex;
     justify-content: center;
     align-items: center;
