@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/syook-dishpool-react/static/css/main.f0426782.css",
+    "main.js": "/syook-dishpool-react/static/js/main.2af74bce.js",
+    "static/js/787.bb8c25a7.chunk.js": "/syook-dishpool-react/static/js/787.bb8c25a7.chunk.js",
+    "index.html": "/syook-dishpool-react/index.html",
+    "main.f0426782.css.map": "/syook-dishpool-react/static/css/main.f0426782.css.map",
+    "main.2af74bce.js.map": "/syook-dishpool-react/static/js/main.2af74bce.js.map",
+    "787.bb8c25a7.chunk.js.map": "/syook-dishpool-react/static/js/787.bb8c25a7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f0426782.css",
+    "static/js/main.2af74bce.js"
+  ]
+}
